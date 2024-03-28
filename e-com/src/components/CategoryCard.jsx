@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const CategoryCard = (props) => {
+    
   return (
     <div>
         

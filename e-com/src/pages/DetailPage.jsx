@@ -36,7 +36,7 @@ const DetailPage = () => {
         <div className='w-100'>
            <img className='w-[40rem] rounded object-cover h-[30rem] m-auto' src={data.images} alt="" />
         </div>
-        <div className='flex sm:w-[50%] w-full items-center flex-wrap m-auto justify-around'> 
+        <div className='flex sm:w-[35%] w-full items-center flex-wrap m-auto justify-around'> 
 
             <h2 className='border-b-4 border-blue-400 text-[1.5rem] font-serif'>{data.title}</h2>
         <div className='flex-col mt-6  w-[50%]'>
