@@ -49,8 +49,9 @@ const Home = () => {
                 ) : (
                     data.map((item) => (
                         <div key={item.id} className='flex-col justify-center border-2'>
+                           
                             <Link to={`/detailpage/${item.id}`}>
-                                <Cards title={item.title} price={item.price} image={item.images} />
+                                <Cards title={item.title} price={item.price} images={item.images} />
                             </Link>
                             <div>
                                 {isItemInCart(item.id) ? (

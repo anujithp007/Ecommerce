@@ -34,7 +34,7 @@ const DetailPage = () => {
   return (
     <div>
         <div className='w-100'>
-           <img className='w-[40rem] rounded object-cover h-[30rem] m-auto' src={data.images} alt="" />
+           <img className='w-[40rem] rounded object-cover h-[30rem] m-auto' src={data.images && data.images.length > 0 ? data.images[0].replace(/[\[\]"]+/g, '') : ''} alt="" />
         </div>
         <div className='flex sm:w-[35%] w-full items-center flex-wrap m-auto justify-around'> 
 
@@ -54,7 +54,7 @@ const DetailPage = () => {
         <div className='flex  flex-wrap mt-6 ml-6'>
             {data?.images?.map((item)=>(
                 
-<img class="h-auto max-w-lg w-[20rem] m-auto transition-all duration-300 rounded-lg blur-sm hover:blur-none" src={item} alt="image description"/>
+<img class="h-auto max-w-lg w-[20rem] m-auto transition-all duration-300 rounded-lg blur-sm hover:blur-none" src={item && item.length > 0 ? item[0].replace(/[\[\]"]+/g, '') : ''} alt="image description"/>
 
             ))}
         </div>

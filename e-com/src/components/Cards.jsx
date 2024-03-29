@@ -10,7 +10,7 @@ const Cards = (props) => {
 
 <div class="w-full max-w-sm  border-gray-200  dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-        <img class="p-8 rounded-t-lg" src={props.image} alt="product image" />
+        <img class="p-8 rounded-t-lg" src={props.images && props.images.length > 0 ? props.images[0].replace(/[\[\]"]+/g, '') : ''} alt="product image" />
     </a>
     <div class="px-5 pb-5">
         <a href="#">

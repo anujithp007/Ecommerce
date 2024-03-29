@@ -50,7 +50,7 @@ const CategoryDetail = () => {
                     data.map((item) => (
                         <div className='flex-col' key={item.id}>
                             <Link to={`/detailpage/${item.id}`}>
-                                <Cards title={item.title} price={item.price} image={item.images} />
+                                <Cards title={item.title} price={item.price} images={item.images} />
                             </Link>
                             <div>
                                 <div className=''>
